@@ -32,9 +32,27 @@ footer {
     justify-content: center;
 }
 
-
-.hero {
+hero {
     grid-area: hero;
+    background-color: black;
+    text-align: center;
+}
+
+.navigationbar {
+    background-color: burlywood;
+    overflow: hidden;
+}
+
+.navigationbar a {
+    float: center;
+    color: red;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+.navigationbar a:hover {
+    background-color: black;
+    color: white;
 }
 
 mainpics {
