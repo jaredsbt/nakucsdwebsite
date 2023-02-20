@@ -1,0 +1,50 @@
+body {
+    display: grid;
+
+    grid-template-rows: 15cm 25vh auto 10cm;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+
+    grid-template-areas: "header header header header"
+        "hero hero hero hero"
+        ". mainpics maincontent ."
+        "footer footer footer footer";
+}
+
+.flex-container-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-container-colum {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    grid-area: header;
+}
+
+header,
+footer {
+    background-color: black;
+    color: burlywood;
+    display: flex;
+    justify-content: center;
+}
+
+
+.hero {
+    grid-area: hero;
+}
+
+mainpics {
+    grid-area: main;
+}
+
+maincontent {
+    grid-area: maincontent;
+}
+
+footer {
+    grid-area: footer;
+}
