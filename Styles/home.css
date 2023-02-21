@@ -1,8 +1,13 @@
+@font-face {
+    font-family: 'Italianno';
+    src: url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+}
+
 body {
     display: grid;
 
-    grid-template-rows: 15cm 25vh auto 10cm;
-    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-rows: 8cm 25vh auto 10cm;
+    grid-template-columns: 1.5fr 3fr 3fr 1.5fr;
 
     grid-template-areas: "header header header header"
         "hero hero hero hero"
@@ -20,6 +25,9 @@ body {
     flex-direction: column;
 }
 
+
+/* HEADER */
+
 header {
     grid-area: header;
 }
@@ -32,9 +40,32 @@ footer {
     justify-content: center;
 }
 
+.org-title {
+    align-items: center;
+    text-align: center;
+}
+
+.chapter-title {
+    align-items: center;
+    text-align: center;
+}
+
+.qualities p {
+    font-family: 'Italianno', cursive;
+    font-size: 25px;
+    color: white;
+
+    text-align: center;
+    justify-content: center;
+    
+}
+
+
+/* HERO */
+
 hero {
     grid-area: hero;
-    background-color: black;
+    background-color: red;
     text-align: center;
 }
 
@@ -55,12 +86,94 @@ hero {
     color: white;
 }
 
-mainpics {
-    grid-area: main;
+
+.banner {
+    width: 100%;
+    height: 22.75vh;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
 }
+
+.slider {
+    width: 100%;
+    height: 22.75vh;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+}
+
+#slideImg {
+    width: 100%;
+    /* height: 50%; */
+    object-fit: cover;
+}
+
+.overlay {
+    width: 100%;
+    height: 22.75vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+}
+
+.content {
+    width: 60%;
+    margin: 160px auto 0;
+    text-align: center;
+    color: white;
+}
+
+.content h1 {
+    position: relative;
+    font-size: 40px;
+    bottom: 100px;
+}
+
+
+
+/* MAIN */
+
+mainpics {
+    grid-area: mainpics;
+    background-color: black;
+    color: white;
+
+}
+
+mainpics p {
+    font-size: 50px;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid;
+    border-color: blanchedalmond;
+    background: blanchedalmond;
+    color: white;
+    cursor: pointer;
+    transition: background 0.5s; 
+}
+
+button:hover {
+    background: transparent;
+    border: 2px solid;
+    border-color: white;
+}
+
+
+/* SIDE */
 
 maincontent {
     grid-area: maincontent;
+    background-color: black;
+    color: white;
 }
 
 footer {
