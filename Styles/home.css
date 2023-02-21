@@ -67,6 +67,7 @@ hero {
     grid-area: hero;
     background-color: red;
     text-align: center;
+    overflow: hidden;
 }
 
 .navigationbar {
