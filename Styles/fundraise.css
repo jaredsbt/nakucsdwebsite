@@ -18,11 +18,7 @@
     src: url('https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap');
 }
 
-.whiteSpace {
-    width: 700px;
-    height: 250px;
-    border: 2px brown solid;
-}
+
 .emptySpace {
     width: 300px;
     height: 25px;
@@ -250,7 +246,22 @@ button:hover {
 
 }
 
+.redOutline {
+    width: 700px;
+    height: 250px;
+    border: 2px brown solid;
+}
 
+.redSquare {
+    width: 250px;
+    height: 250px;
+    border: 2px brown solid;
+}
+
+#right {
+    position: relative;
+    left: 450px;
+}
 /* SIDE */
 
 aside {
