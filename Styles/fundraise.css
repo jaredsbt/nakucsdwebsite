@@ -320,6 +320,18 @@ aside.Cart-Container {
     cursor: pointer;
 }
 
+.desc h3 {
+    color: white;
+}
+
+.desc h2 {
+    font-family: 'Cinzel Decorative', cursive;
+    /* text-align: center;
+    font-size: 35px; */
+    font-weight: bold;
+    color: red;
+    -webkit-text-stroke: 0.5px burlywood;
+}
 .count{
     font-size: 20px;
     font-family: ‘Open Sans’;
