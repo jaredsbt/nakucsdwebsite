@@ -246,21 +246,29 @@ button:hover {
 
 }
 
-.redOutline {
+.brownOutline {
     width: 700px;
     height: 250px;
-    border: 2px brown solid;
+    border: 2px burlywood solid;
 }
 
-.redSquare {
+.brownSquare {
     width: 250px;
     height: 250px;
-    border: 2px brown solid;
+    border: 2px burlywood solid;
 }
 
 #right {
     position: relative;
     left: 450px;
+}
+
+#centerForSquare1 {
+    position: relative;
+    left: 50px;
+    /* align-items: center;
+    text-align: center;
+    justify-content: center; */
 }
 /* SIDE */
 
