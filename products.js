@@ -40,5 +40,5 @@ const products = [
         name: "Lime with Cucumber and Chia Seeds",
         price: 5.00,
         description: "Rimmed with Tajin and Chamoy",
-    }
+    },
 ]
