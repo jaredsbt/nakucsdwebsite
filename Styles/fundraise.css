@@ -10,8 +10,18 @@
 
     font-family: 'Cinzel Decorative';
     src: url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+    
 }
-
+.emptySpace {
+    width: 600px;
+    height: 25px;
+    /* border: 2px black solid; */
+}
+.box {
+    width: 300px;
+    height: 300px;
+    border: 2px black solid;
+}
 
 /* .bg-gradiant {
     height: 100vh;
@@ -30,7 +40,8 @@ body {
         ". main aside ."
         "footer footer footer footer";
 
-    background-image: linear-gradient(black, green);
+    /* background-image: linear-gradient(black, red); */
+    background-color: black;
 }
 
 .flex-container-row {
@@ -53,8 +64,10 @@ header {
 
 header,
 footer {
+
+
     background-color: black;
-    color: burlywood;
+    color: white;
     display: flex;
     justify-content: center;
 }
@@ -69,11 +82,12 @@ footer {
     text-align: center;
 }
 
-.qualities p {
+.qualities h1 {
     font-family: 'Italianno', cursive;
-    font-size: 25px;
-    color: white;
-
+    font-size: 50px;
+    color: red;
+    font-weight: bold;
+    -webkit-text-stroke: 0.5px burlywood;
     text-align: center;
     justify-content: center;
     
@@ -84,7 +98,7 @@ footer {
 
 hero {
     grid-area: hero;
-    background-color: red;
+    background-color: white;
     text-align: center;
     overflow: hidden;
 }
@@ -122,6 +136,7 @@ hero {
     position: absolute;
     top: 0;
     object-fit: cover;
+    overflow: hidden;
 }
 
 #slideImg {
