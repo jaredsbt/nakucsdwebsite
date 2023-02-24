@@ -12,6 +12,12 @@
     src: url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
     
 }
+
+.whiteSpace {
+    width: 500px;
+    height: 200px;
+    border: 2px brown solid;
+}
 .emptySpace {
     width: 600px;
     height: 25px;
@@ -190,7 +196,7 @@ main h1 {
 
 main p {
     font-family: 'Forum', cursive;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
 }
 
