@@ -11,6 +11,11 @@
     font-family: 'Cinzel Decorative';
     src: url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
     
+    font-style: 'Chakra Petch';
+    src: url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,600&display=swap');
+
+    font-style: 'Charmonman';
+    src: url('https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap');
 }
 
 .whiteSpace {
@@ -19,7 +24,7 @@
     border: 2px brown solid;
 }
 .emptySpace {
-    width: 600px;
+    width: 300px;
     height: 25px;
     /* border: 2px black solid; */
 }
@@ -31,7 +36,8 @@
 }
 
 .boxEmblem {
-    float: right;
+    position: relative;
+    left: 100px;
     width: 300px;
     height: 300px;
     border: 2px black solid;
@@ -88,22 +94,30 @@ footer {
 }
 
 .org-title {
+    font-family: 'Italianno', cursive;
+    color: red;
+    font-weight: bold;
+    -webkit-text-stroke: 0.5px burlywood;
     align-items: center;
     text-align: center;
 }
 
 .chapter-title {
+    font-family: 'Italianno', cursive;
+    color: red;
+    font-weight: bold;
+    -webkit-text-stroke: 0.5px burlywood;
     align-items: center;
     text-align: center;
 
 }
 
 .qualities h1 {
-    font-family: 'Italianno', cursive;
+    font-family: 'Charmonman', cursive;
     font-size: 40px;
-    color: red;
+    color: burlywood;
     font-weight: bold;
-    -webkit-text-stroke: 0.5px burlywood;
+    -webkit-text-stroke: 0.5px white;
     text-align: center;
     justify-content: center;
     
@@ -164,7 +178,7 @@ hero {
 .overlay {
     width: 100%;
     height: 50vh;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5));
     position: absolute;
     top: 0;
     object-fit: cover;
