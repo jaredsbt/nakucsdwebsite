@@ -68,3 +68,27 @@ function renderCartItems() {
         </div>
     `;
 }
+
+// Change quantity
+function changeQuantity(action, id) {
+    cart = cart.map((item) => {
+
+        let quantity = item.quantity;
+
+        if(item === id){
+            if(action === "minus") {
+                quantity--;
+            } else if(action === "plus"){
+                quantity++;
+            }
+
+        }
+
+        return {
+            ...item,
+            quantity,
+        };
+    });
+
+    updateCart();
+}
