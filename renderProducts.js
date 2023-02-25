@@ -16,8 +16,8 @@ function renderProducts() {
                     <div class = "add-to-wishlist">
                         <img src = "">
                     </div>
-                    <div class = "add-to-cart">
-                        <img src = "">
+                    <div class = "add-to-cart" onclick = "addToCart(${product.id})">
+                        <img src = "icons/cart.png" style = "width: 25px; height: 25px">
                     </div>
                 </div>
             </div>
@@ -25,3 +25,9 @@ function renderProducts() {
     });
 }
 renderProducts();
+
+// Add to Cart
+
+function addToCart(id) {
+    console.log(id);
+}
