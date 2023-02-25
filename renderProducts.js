@@ -47,3 +47,24 @@ function addToCart(id) {
     
     updateCart();
 }
+
+// Render Cart
+
+function renderCartItems() {
+    cartItems.innerHTML = `
+        <div class="cart-item">
+            <div class="item-info" onclick="removeItemFromCart(${item.id})">
+                // <img src="${item.imgSrc}" alt="${item.name}">
+                <h4>${item.name}</h4>
+            </div>
+            <div class="unit-price">
+                <small>$</small>${item.price}
+            </div>
+            <div class="units">
+                <div class="btn minus" onclick="changeNumberOfUnits('minus', ${item.id})">-</div>
+                <div class="number">${item.quantity}</div>
+                <div class="btn plus" onclick="changeNumberOfUnits('plus', ${item.id})">+</div>           
+            </div>
+        </div>
+    `;
+}
