@@ -106,14 +106,65 @@
                 </main>
 
                 <aside>
-                    <!-- <div class = "asideTitle"><h1>NAK SNACKS</h1></div> -->
                     <div class = "flex-container-row">
                         <div class = "flex-containter-column">
                             <div><h1>NAK SNACKS</h1></div>
 
-                            <div class = "products-list">
-                                <div class = "pruducts">
-                                    <div class = "item">
+                            <div class="products-list">
+                                <div class="products">
+                                    <!-- render porducts here -->
+                                </div>
+                                <div class="cart">
+                                    <div class="cart-header">
+                                        <div class="column1">Item</div>
+                                        <div class="column2">Price</div>
+                                        <div class="column3">Quantity</div>
+                                    </div>
+                                    <div class="cart-items">
+                                        <!-- render cart items here -->
+                                    </div>
+                                    <div class="cart-footer">
+                                        <div class="subtotal">
+                                            Subtotal (0 items): $0
+                                        </div>
+
+                                        <div class="checkout">
+                                            <div class = "payment"><button type = "button">Place Order</button></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <script src = "./products.js"></script>
+                            <script src = "./renderProducts.js"></script>
+                            </div>
+                        </div>
+                </aside>
+
+                <footer>
+                    <div class = "flex-containter-row">
+                        <div><img src = "nakImages/NAK_Emblem.png" style = "width: 100px; height: 100px"/></div>
+                        <div class = "flex-containter-column">
+                            
+                            <div><h1>About Us</h1></div>
+                            <div><p>Nu Alpha Kappa</p></div>
+                            <div><p>University of California, San Diego</p></div>
+                            <div><p>Lambda Chapter</p></div>
+
+                        </div>
+                    </div>
+                </footer>
+                
+        </body>
+    </html>
+
+
+
+    <!-- EXTRA CODE: 
+    
+    
+    <div class = "item">
                                         <div class = "item-container">
                                             <div class = "item-img"></div>
                                             <div class = "desc">
@@ -209,96 +260,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-
-                                <div class = "cart">
-                                    <div class = "cart-header">
-                                        <div class = "column1">Items</div>
-                                        <div class = "column2">Price</div>
-                                        <div class = "column3">Quantity</div>
-                                    </div>
-                                    <div class = "cart-items">
-                                        <!-- render cart items here -->
-                    
-                                    </div>
-                                </div>
-
-
-
-
-
-                                
-
-
-                            </div>
-
-                            <!-- <div class = "Cart-Container">
-                                <div class = "Cart-Items">
-
-
-                                    <div class = "about">
-                                        <h1 class = "title">Esquites</h1>
-                                    </div>
-                                    <div class = "counter">
-                                        <div class = "btn">+</div>
-                                        <div class = "btn">-</div>
-                                    </div>
-                                    <div class = "prices"></div>
-                                </div>
-                            </div> -->
-                        </div>
-                    </div>
-
-                    <div class = "payment">
-                        <button type = "button">Place Order</button>
-                    </div>
-                        
-                </aside>
-
-                <footer>
-                    <div class="products-list">
-                        <div class="products">
-                            <!-- render porducts here -->
-                        </div>
-                        <div class="cart">
-                            <div class="cart-header">
-                                <div class="column1">Item</div>
-                                <div class="column2">Unit price</div>
-                                <div class="column3">Units</div>
-                            </div>
-                            <div class="cart-items">
-                                <!-- render cart items here -->
-                            </div>
-                            <div class="cart-footer">
-                                <div class="subtotal">
-                                    Subtotal (0 items): $0
-                                </div>
-                                <div class="checkout">
-                                    Proceed to checkout
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <script src = "./products.js"></script>
-                    <script src = "./renderProducts.js"></script>
-
-
-
-                    
-                    <!-- <div class = "flex-containter-row">
-                        <div><img src = "nakImages/NAK_Emblem.png" style = "width: 100px; height: 100px"/></div>
-                        <div class = "flex-containter-column">
-                            
-                            <div><h1>About Us</h1></div>
-                            <div><p>Nu Alpha Kappa</p></div>
-                            <div><p>University of California, San Diego</p></div>
-                            <div><p>Lambda Chapter</p></div>
-                        </div>
-
-                    </div>
-                    -->
-                </footer>
-                
-        </body>
-    </html>
+    
+    
+    
+    
+    
+    -->

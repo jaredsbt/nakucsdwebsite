@@ -20,7 +20,7 @@ function renderProducts() {
                         <img src = "">
                     </div>
                     <div class = "add-to-cart" onclick = "addToCart(${product.id})">
-                        <img src = "icons/cart.png" style = "width: 25px; height: 25px">
+                       <div class = "btn"><img src = "icons/cart.png" style = "width: 25px; height: 25px"></div>
                     </div>
                 </div>
             </div>
