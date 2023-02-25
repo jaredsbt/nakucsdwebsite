@@ -34,10 +34,10 @@ const products = [
 
     {
         id: 4,
-        name: "Aguas Frescas Horachata",
+        name: "Horachata",
         price: 5.00,
         description: "Rimmed with Nutella or Lechera and Cinnanom",
-        imageSrc: "./nakSnaks/",
+        imageSrc: "./nakSnaks/horchata.jpeg",
     },
 
     {
