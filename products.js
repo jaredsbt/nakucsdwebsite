@@ -25,7 +25,7 @@ const products = [
         id: 3,
         name: "Hot Cheeto's with cheese",
         price: 5.00,
-        
+        description: "",
     }, 
 
     {

@@ -31,7 +31,8 @@ renderProducts();
 
 // Cart Array
 
-let cart = [];
+let cart = JSON.parse(localStorage.getItem("CART")) || [];
+updateCart();
 
 // Add to Cart
 
@@ -40,26 +41,31 @@ function addToCart(id) {
         changeQuantity("plus", id);
     } else {
 
-    const item = products.find((product) => product.id == id);
+        const item = products.find((product) => product.id == id);
 
-    cart.push({
-        ...item,
-        quantity: 1,
-    });
+        cart.push({
+            ...item,
+            quantity: 1,
+        });
     }
     
     updateCart();
 }
 
+// update cart
 function updateCart() {
     renderCartItems();
     renderSubTotal();
+
+    // Save cart to local Storage
+    localStorage.setItem("CART", JSON.stringify(cart));
 }
 
-// Render SubTotal
 
+// Render SubTotal
 function renderSubtotal(){ 
-    let totalPrice, totalItems = 0;
+    let totalPrice = 0,
+      totalItems = 0;
 
     cart.forEach((item) => {
         totalPrice += item.price * item.quantity;
@@ -67,27 +73,32 @@ function renderSubtotal(){
     });
 
     subtotalE1.innerHTML = `Subtotal (${totalItems} items): $$(totalPrice.toFixed(2))`;
-    totalItemsInCartE1.innerHTML = ``;
+    totalItemsInCartE1.innerHTML = totalItems;
  }
-// Render Cart
 
+
+// Render Cart Items
 function renderCartItems() {
-    cartItems.innerHTML = `
-        <div class="cart-item">
-            <div class="item-info" onclick="removeItemFromCart(${item.id})">
-                // <img src="${item.imgSrc}" alt="${item.name}">
-                <h4>${item.name}</h4>
+    cartItemsE1.innerHTML = "";
+    cart.forEach((item) => {
+        cartItems.innerHTML = `
+            <div class="cart-item">
+                <div class="item-info" onclick="removeItemFromCart(${item.id})">
+                    // <img src="${item.imgSrc}" alt="${item.name}">
+                    <h4>${item.name}</h4>
+                </div>
+                <div class="unit-price">
+                    <small>$</small>${item.price}
+                </div>
+                <div class="units">
+                    <div class="btn minus" onclick="changeNumberOfUnits('minus', ${item.id})">-</div>
+                    <div class="number">${item.quantity}</div>
+                    <div class="btn plus" onclick="changeNumberOfUnits('plus', ${item.id})">+</div>           
+                </div>
             </div>
-            <div class="unit-price">
-                <small>$</small>${item.price}
-            </div>
-            <div class="units">
-                <div class="btn minus" onclick="changeNumberOfUnits('minus', ${item.id})">-</div>
-                <div class="number">${item.quantity}</div>
-                <div class="btn plus" onclick="changeNumberOfUnits('plus', ${item.id})">+</div>           
-            </div>
-        </div>
-    `;
+        `;
+    });
+    
 }
 
 // Change quantity
