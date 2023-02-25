@@ -35,10 +35,15 @@ let cart = [];
 function addToCart(id) {
     if(cart.some((item) => item.id == id)) {
         alert("Product already added!");
-    }
+    } else {
 
     const item = products.find((product) => product.id == id);
-    cart.push(item);
+
+    cart.push({
+        ...item,
+        quantity: 1,
+    });
+    }
     
-    console.log(cart);
+    updateCart();
 }
