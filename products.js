@@ -5,6 +5,7 @@ const products = [
         price: 6.00,
         description: 
             "Off the cob corn, served with your choice of toppings",
+        imageSrc: "./nakSnaks/esquites.jpeg",
     },
 
     {
@@ -12,6 +13,7 @@ const products = [
         name: "Rueditas",
         price: 5.00,
         description: "Fried flour pinwheels, garnished with your choice of toppings",
+        imageSrc: "./nakSnaks/rueditas.jpeg",
     },
 
     {

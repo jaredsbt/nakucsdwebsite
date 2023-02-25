@@ -13,15 +13,19 @@ function renderProducts() {
                     <div class = "item-img"></div>
                     <div class = "desc">
                         <h2>${product.name}</h2>
-                        <h3><small>$</small>${product.price}</h3>
+                        <div class = "add-to-cart" onclick = "addToCart(${product.id})">
+                            <div class = "flex-container-row">
+                                <h2><small>$</small>${product.price}</h2>
+                                <div class = "btn"><img src = "icons/cart.png" style = "width: 25px; height: 25px"></div>
+                            </div>
+                        </div>
+                        <div class = "product-Images"><img src = ${product.imageSrc} style = "width: 100px; height: 100px"></div>
                         <p>${product.description}</p>
                     </div>
                     <div class = "add-to-wishlist">
                         <img src = "">
                     </div>
-                    <div class = "add-to-cart" onclick = "addToCart(${product.id})">
-                       <div class = "btn"><img src = "icons/cart.png" style = "width: 25px; height: 25px"></div>
-                    </div>
+                    
                 </div>
             </div>
         `;
