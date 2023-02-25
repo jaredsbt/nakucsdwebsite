@@ -76,7 +76,7 @@ function changeQuantity(action, id) {
         let quantity = item.quantity;
 
         if(item === id){
-            if(action === "minus") {
+            if(action === "minus" && quantity > 1) {
                 quantity--;
             } else if(action === "plus"){
                 quantity++;
