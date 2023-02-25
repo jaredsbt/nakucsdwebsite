@@ -34,7 +34,7 @@ let cart = [];
 
 function addToCart(id) {
     if(cart.some((item) => item.id == id)) {
-        alert("Product already added!");
+        changeQuantity("plus", id);
     } else {
 
     const item = products.find((product) => product.id == id);
