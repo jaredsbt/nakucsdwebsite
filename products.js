@@ -21,6 +21,7 @@ const products = [
         name: "Nachos",
         price: 3.00,
         description: "Served with cheese and optional jalapenos",
+        imageSrc: "./nakSnaks/nachos.jpeg",
     },
 
     {
@@ -28,6 +29,7 @@ const products = [
         name: "Hot Cheeto's with cheese",
         price: 5.00,
         description: "",
+        imageSrc: "./nakSnaks/hotCheetoswCheese.webp",
     }, 
 
     {
@@ -35,6 +37,7 @@ const products = [
         name: "Aguas Frescas Horachata",
         price: 5.00,
         description: "Rimmed with Nutella or Lechera and Cinnanom",
+        imageSrc: "./nakSnaks/",
     },
 
     {
@@ -42,5 +45,6 @@ const products = [
         name: "Lime with Cucumber and Chia Seeds",
         price: 5.00,
         description: "Rimmed with Tajin and Chamoy",
+        imageSrc: "./nakSnaks/"
     },
 ]
