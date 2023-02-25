@@ -26,8 +26,19 @@ function renderProducts() {
 }
 renderProducts();
 
+// Cart Array
+
+let cart = [];
+
 // Add to Cart
 
 function addToCart(id) {
-    console.log(id);
+    if(cart.some((item) => item.id == id)) {
+        alert("Product already added!");
+    }
+
+    const item = products.find((product) => product.id == id);
+    cart.push(item);
+    
+    console.log(cart);
 }
