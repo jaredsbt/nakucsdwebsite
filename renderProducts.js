@@ -1,5 +1,7 @@
 // Elements
 const productsE1 = document.querySelector(".products");
+const cartItemsE1 = document.querySelector(".cart-items");
+const subtotalE1 = document.querySelector(".subtotal");
 
 // Render Products
 function renderProducts() {
@@ -48,6 +50,23 @@ function addToCart(id) {
     updateCart();
 }
 
+function updateCart() {
+    renderCartItems();
+    renderSubTotal();
+}
+
+// Render SubTotal
+
+function renderSubtotal(){ 
+    let totalPrice, totalItems = 0;
+
+    cart.forEach((item) => {
+        totalPrice += item.price * item.quantity;
+        totalItems += item.quantity;
+    });
+
+    subtotalE1.innerHTML = `Subtotal (${totalItems} items): $$(totalPrice)`;
+ }
 // Render Cart
 
 function renderCartItems() {
