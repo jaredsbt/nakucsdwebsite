@@ -15,7 +15,7 @@ function renderProducts() {
                             <div class = "flex-container-row">
                                 <h2><small>$</small>${product.price}</h2>
                                 <div class = "add-to-cart" onclick = "addToCart(${product.id})">
-                                    <div class = "btn"><img src = "icons/cart.png" style = "width: 25px; height: 25px"></div>
+                                    <img src = "icons/cart.png" style = "width: 25px; height: 25px">
                                 </div>
                             </div>
                         <div class = "product-Images"><img src = ${product.imageSrc} style = "width: 100px; height: 100px"></div>
@@ -23,8 +23,7 @@ function renderProducts() {
                     </div>
                     <div class = "add-to-wishlist">
                         <img src = "">
-                    </div>
-                    
+                    </div> 
                 </div>
             </div>
         `;
@@ -75,7 +74,7 @@ function renderSubtotal(){
         totalItems += item.quantity;
     });
 
-    subtotalE1.innerHTML = `Subtotal (${totalItems} items): $$(totalPrice.toFixed(2))`;
+    subtotalE1.innerHTML = `Subtotal (${totalItems} items): $${totalPrice.toFixed(2)}`;
     totalItemsInCartE1.innerHTML = totalItems;
  }
 
@@ -84,7 +83,7 @@ function renderSubtotal(){
 function renderCartItems() {
     cartItemsE1.innerHTML = "";
     cart.forEach((item) => {
-        cartItems.innerHTML = `
+        cartItemsE1.innerHTML += `
             <div class="cart-item">
                 <div class="item-info" onclick="removeItemFromCart(${item.id})">
                     // <img src="${item.imgSrc}" alt="${item.name}">
@@ -103,6 +102,14 @@ function renderCartItems() {
     });
     
 }
+
+// Remove item from cart
+
+function removeItemFromCart(id) {
+    cart = cart.filter((item) => item.id !== id);
+  
+    updateCart();
+  }
 
 // Change quantity
 function changeQuantity(action, id) {

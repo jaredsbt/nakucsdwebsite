@@ -320,6 +320,21 @@ aside.Cart-Container {
     cursor: pointer;
 }
 
+.add-to-cart {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: ‘Open Sans’;
+    font-weight: 900;
+    color: #202020;
+    cursor: pointer;
+}
+
 .desc h3 {
     color: white;
 }
