@@ -221,7 +221,7 @@ main p {
 }
 
 .NakSnaks {
-    width: 700px;
+    width: 850px;
     /* height: 250px; */
     border: 2px burlywood solid;
 }
@@ -231,8 +231,18 @@ main p {
     justify-content: center;
     align-items: baseline;
 }
+
+.products {
+    height: 100%;
+    width: 75%;
+  
+    display: grid;
+    grid-template-rows: 5fr 5fr;
+    grid-template-columns: repeat(3, 3fr);
+}
+
 .brownOutline {
-    width: 700px;
+    width: 850px;
     height: 250px;
     border: 2px burlywood solid;
 }
@@ -246,6 +256,13 @@ main p {
 #right {
     position: absolute;
     left: 375px;
+}
+
+.gratitudeSpace {
+    height: 200px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 /* #centerForSquare1 {

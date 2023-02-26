@@ -23,9 +23,6 @@ function renderProducts() {
                                 <div class = "product-Images"><img src = ${product.imageSrc} style = "width: 100px; height: 100px"></div>
                                 <p>${product.description}</p>
                             </div>
-                            <div class = "add-to-wishlist">
-                                <img src = "">
-                            </div> 
                         </div>
                     </div>
                 </div>
