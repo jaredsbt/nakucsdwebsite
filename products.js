@@ -6,6 +6,7 @@ const products = [
         description: 
             "Off the cob corn, served with your choice of toppings",
         imageSrc: "./nakSnaks/esquites.jpeg",
+        inStock: 5,
     },
 
     {
