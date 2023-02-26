@@ -260,7 +260,7 @@ main p {
 
 .top-half {
     width: 220px;
-    height: 800px;
+    /* height: 800px; */
     border: 2px red solid;
     align-items: center;
 }
