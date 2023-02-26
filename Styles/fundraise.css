@@ -445,3 +445,15 @@ button:hover {
 footer {
     grid-area: footer;
 }
+
+.nakInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerContent {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    right: 400px;
+}
