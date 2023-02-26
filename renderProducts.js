@@ -8,22 +8,26 @@ const totalItemsInCartE1 = document.querySelector(".total-items-in-cart");
 function renderProducts() {
     products.forEach((product) => {
         productsE1.innerHTML += `
-            <div class = "item">
-                <div class = "item-container">
-                    <div class = "desc">
-                        <h2>${product.name}</h2>
-                            <div class = "flex-container-row">
-                                <h2><small>$</small>${product.price}</h2>
-                                <div class = "add-to-cart" onclick = "addToCart(${product.id})">
-                                    <img src = "icons/cart.png" style = "width: 25px; height: 25px">
-                                </div>
+            <div class = "flex-container-column">
+                <div class = "item">
+                    <div class = "item-container" style = "width: 300px; height: 300px">
+                        <div class = "flex-container-column">
+                            <div class = "desc">
+                                <h2>${product.name}</h2>
+                                    <div class = "flex-container-row">
+                                        <h2><small>$</small>${product.price}</h2>
+                                        <div class = "add-to-cart" onclick = "addToCart(${product.id})">
+                                            <img src = "icons/cart.png" style = "width: 25px; height: 25px">
+                                        </div>
+                                    </div>
+                                <div class = "product-Images"><img src = ${product.imageSrc} style = "width: 100px; height: 100px"></div>
+                                <p>${product.description}</p>
                             </div>
-                        <div class = "product-Images"><img src = ${product.imageSrc} style = "width: 100px; height: 100px"></div>
-                        <p>${product.description}</p>
+                            <div class = "add-to-wishlist">
+                                <img src = "">
+                            </div> 
+                        </div>
                     </div>
-                    <div class = "add-to-wishlist">
-                        <img src = "">
-                    </div> 
                 </div>
             </div>
         `;
