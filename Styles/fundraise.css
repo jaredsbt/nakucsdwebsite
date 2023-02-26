@@ -244,17 +244,17 @@ main p {
 }
 
 #right {
-    position: relative;
-    left: 450px;
+    position: absolute;
+    left: 375px;
 }
 
-#centerForSquare1 {
+/* #centerForSquare1 {
     position: relative;
     left: 50px;
-    /* align-items: center;
+    align-items: center;
     text-align: center;
-    justify-content: center; */
-}
+    justify-content: center;
+} */
 
 /* SIDE */
 
