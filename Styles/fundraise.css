@@ -274,11 +274,34 @@ button:hover {
 
 .top-half {
     width: 220px;
-    height: 1,373.5px;
+    height: 800px;
     border: 2px red solid;
     align-items: center;
 }
 
+.cart {
+    width: 220px;
+    /* height: 800px; */
+    border: 2px red solid;
+    align-items: center;
+}
+
+.cart-header h2 {
+    font-family: 'Cinzel Decorative', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+    -webkit-text-stroke: 0.5px burlywood;
+}
+
+.subtotal {
+    align-items: center;
+    text-align: center;
+}
 aside {
     grid-area: aside;
     background-color: black;
