@@ -6,19 +6,18 @@ const totalItemsInCartE1 = document.querySelector(".total-items-in-cart");
 
 // Render Products
 function renderProducts() {
-    products.forEach( (product) => {
+    products.forEach((product) => {
         productsE1.innerHTML += `
             <div class = "item">
                 <div class = "item-container">
-                    <div class = "item-img"></div>
                     <div class = "desc">
                         <h2>${product.name}</h2>
-                        <div class = "add-to-cart" onclick = "addToCart(${product.id})">
                             <div class = "flex-container-row">
                                 <h2><small>$</small>${product.price}</h2>
-                                <div class = "btn"><img src = "icons/cart.png" style = "width: 25px; height: 25px"></div>
+                                <div class = "add-to-cart" onclick = "addToCart(${product.id})">
+                                    <div class = "btn"><img src = "icons/cart.png" style = "width: 25px; height: 25px"></div>
+                                </div>
                             </div>
-                        </div>
                         <div class = "product-Images"><img src = ${product.imageSrc} style = "width: 100px; height: 100px"></div>
                         <p>${product.description}</p>
                     </div>
@@ -41,11 +40,11 @@ updateCart();
 // Add to Cart
 
 function addToCart(id) {
-    if(cart.some((item) => item.id == id)) {
+    if(cart.some((item) => item.id === id)) {
         changeQuantity("plus", id);
     } else {
 
-        const item = products.find((product) => product.id == id);
+        const item = products.find((product) => product.id === id);
 
         cart.push({
             ...item,
@@ -111,13 +110,12 @@ function changeQuantity(action, id) {
 
         let quantity = item.quantity;
 
-        if(item === id){
+        if(item.id === id){
             if(action === "minus" && quantity > 1) {
                 quantity--;
             } else if(action === "plus"){
                 quantity++;
             }
-
         }
 
         return {
