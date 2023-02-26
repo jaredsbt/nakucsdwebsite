@@ -220,32 +220,17 @@ main p {
     text-align: center;
 }
 
-button {
-    width: 200px;
-    padding: 15px 0;
+.NakSnaks {
+    width: 700px;
+    /* height: 250px; */
+    border: 2px burlywood solid;
+}
+
+.NakSnaks h1 {
     text-align: center;
-    margin: 0 10px;
-    border-radius: 25px;
-    font-weight: bold;
-    border: 2px solid;
-    border-color: blanchedalmond;
-    background: blanchedalmond;
-    color: white;
-    cursor: pointer;
-    transition: background 0.5s; 
+    justify-content: center;
+    align-items: baseline;
 }
-
-button:hover {
-    background: transparent;
-    border: 2px solid;
-    border-color: white;
-}
-
-.payment {
-    align-items: center;
-
-}
-
 .brownOutline {
     width: 700px;
     height: 250px;
@@ -406,6 +391,32 @@ aside.Cart-Container {
     font-family: ‘Open Sans’;
     font-weight: 900;
     color: #202020;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid;
+    border-color: blanchedalmond;
+    background: blanchedalmond;
+    color: white;
+    cursor: pointer;
+    transition: background 0.5s; 
+}
+
+button:hover {
+    background: transparent;
+    border: 2px solid;
+    border-color: white;
+}
+
+.payment {
+    align-items: center;
+
 }
 
 /* Footer */
