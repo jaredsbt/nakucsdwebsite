@@ -15,6 +15,7 @@ const products = [
         price: 5.00,
         description: "Fried flour pinwheels, garnished with your choice of toppings",
         imageSrc: "./nakSnaks/rueditas.jpeg",
+        inStock: 5,
     },
 
     {
@@ -23,6 +24,7 @@ const products = [
         price: 3.00,
         description: "Served with cheese and optional jalapenos",
         imageSrc: "./nakSnaks/nachos.jpeg",
+        inStock: 5,
     },
 
     {
@@ -31,6 +33,7 @@ const products = [
         price: 5.00,
         description: "",
         imageSrc: "./nakSnaks/hotCheetoswCheese.webp",
+        inStock: 5,
     }, 
 
     {
@@ -39,6 +42,7 @@ const products = [
         price: 5.00,
         description: "Rimmed with Nutella or Lechera and Cinnanom",
         imageSrc: "./nakSnaks/horchata.jpeg",
+        inStock: 5,
     },
 
     {
@@ -47,5 +51,6 @@ const products = [
         price: 5.00,
         description: "Rimmed with Tajin and Chamoy",
         imageSrc: "./nakSnaks/chiadrink.jpeg",
+        inStock: 5,
     },
 ]

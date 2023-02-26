@@ -335,6 +335,17 @@ aside.Cart-Container {
     cursor: pointer;
 }
 
+.unit-price {
+    position: relative;
+    right: 50px;
+}
+
+/* .item-info h4 {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+} */
+
 .desc h3 {
     color: white;
 }

@@ -85,17 +85,21 @@ function renderCartItems() {
     cart.forEach((item) => {
         cartItemsE1.innerHTML += `
             <div class="cart-item">
-                <div class="item-info" onclick="removeItemFromCart(${item.id})">
-                    // <img src="${item.imgSrc}" alt="${item.name}">
-                    <h4>${item.name}</h4>
-                </div>
-                <div class="unit-price">
-                    <small>$</small>${item.price}
-                </div>
-                <div class="units">
-                    <div class="btn minus" onclick="changeQuantity('minus', ${item.id})">-</div>
-                    <div class="number">${item.quantity}</div>
-                    <div class="btn plus" onclick="changeQuantity('plus', ${item.id})">+</div>           
+                <div class = "flex-container-row">
+                    <div class="item-info" onclick="removeItemFromCart(${item.id})">
+                        <img src="${item.imageSrc}" alt="${item.name}" style = "width: 50px; height: 50px">
+                        <h4>CLICK TO REMOVE</h4>
+                    </div>
+                    <div class="unit-price">
+                        <small>$</small>${item.price}
+                    </div>
+                    <div class="units">
+                        <div class = "flex-container-row">
+                            <div class="btn minus" onclick="changeQuantity('minus', ${item.id})">-</div>
+                            <div class="number">${item.quantity}</div>
+                            <div class="btn plus" onclick="changeQuantity('plus', ${item.id})">+</div>
+                        </div>           
+                    </div>
                 </div>
             </div>
         `;
@@ -120,7 +124,7 @@ function changeQuantity(action, id) {
         if(item.id === id){
             if(action === "minus" && quantity > 1) {
                 quantity--;
-            } else if(action === "plus"){
+            } else if(action === "plus" && quantity < item.inStock){
                 quantity++;
             }
         }
