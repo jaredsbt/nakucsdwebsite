@@ -255,6 +255,7 @@ main p {
     text-align: center;
     justify-content: center; */
 }
+
 /* SIDE */
 
 .top-half {
@@ -267,7 +268,7 @@ main p {
 .cart {
     width: 220px;
     /* height: 800px; */
-    border: 2px red solid;
+    border: 2px white solid;
     align-items: center;
 }
 
