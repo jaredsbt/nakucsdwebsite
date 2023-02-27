@@ -18,6 +18,41 @@
     src: url('https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap');
 }
 
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes fade-left {
+    0% {
+        opacity: 0;
+        transform: translateX(30px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+}
 
 .emptySpace {
     width: 300px;
@@ -77,6 +112,7 @@ body {
 
 header {
     grid-area: header;
+    animation: fade-down 1.5s;
 }
 
 header,
@@ -127,6 +163,7 @@ hero {
     background-color: black;
     text-align: center;
     overflow: hidden;
+    animation: fade-up 1s;
 }
 
 .navigationbar {
@@ -201,7 +238,7 @@ main {
     grid-area: main;
     background-color: black;
     color: white;
-
+    animation: fade-up 5s;
 }
 
 main h1 {
@@ -278,6 +315,13 @@ main p {
 
 /* SIDE */
 
+aside {
+    grid-area: aside;
+    background-color: black;
+    color: white;
+    animation: fade-left 1s;
+}
+
 .top-half {
     width: 220px;
     /* height: 800px; */
@@ -307,11 +351,6 @@ main p {
 .subtotal {
     align-items: center;
     text-align: center;
-}
-aside {
-    grid-area: aside;
-    background-color: black;
-    color: white;
 }
 
 
