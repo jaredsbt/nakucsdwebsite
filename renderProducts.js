@@ -66,7 +66,7 @@ function updateCart() {
 
 
 // Render SubTotal
-function renderSubtotal(){ 
+function renderSubTotal() { 
     let totalPrice = 0,
       totalItems = 0;
 
