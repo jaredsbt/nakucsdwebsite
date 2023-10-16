@@ -5,7 +5,7 @@ const products = [
         price: 6.00,
         description: 
             "Off the cob corn, served with your choice of toppings",
-        imageSrc: "./nakSnaks/esquites.jpeg",
+        imageSrc: "../nakSnaks/esquites.jpeg",
         inStock: 5,
     },
 
@@ -14,7 +14,7 @@ const products = [
         name: "Rueditas",
         price: 5.00,
         description: "Fried flour pinwheels, garnished with your choice of toppings",
-        imageSrc: "./nakSnaks/rueditas.jpeg",
+        imageSrc: "../nakSnaks/rueditas.jpeg",
         inStock: 5,
     },
 
@@ -23,7 +23,7 @@ const products = [
         name: "Nachos",
         price: 3.00,
         description: "Served with cheese and optional jalapenos",
-        imageSrc: "./nakSnaks/nachos.jpeg",
+        imageSrc: "../nakSnaks/nachos.jpeg",
         inStock: 5,
     },
 
@@ -32,7 +32,7 @@ const products = [
         name: "Hot Cheeto's with cheese",
         price: 5.00,
         description: "Served with cheese and optional jalapenos",
-        imageSrc: "./nakSnaks/hotCheetoswCheese.webp",
+        imageSrc: "../nakSnaks/hotCheetoswCheese.webp",
         inStock: 5,
     }, 
 
@@ -41,7 +41,7 @@ const products = [
         name: "Horachata",
         price: 5.00,
         description: "Rimmed with Nutella or Lechera and Cinnamon",
-        imageSrc: "./nakSnaks/horchata.jpeg",
+        imageSrc: "../nakSnaks/horchata.jpeg",
         inStock: 5,
     },
 
@@ -50,7 +50,7 @@ const products = [
         name: "Cucumber Limeade",
         price: 5.00,
         description: "Rimmed with Tajin, Chamoy, and Chia Seeds",
-        imageSrc: "./nakSnaks/chiadrink.jpeg",
+        imageSrc: "../nakSnaks/chiadrink.jpeg",
         inStock: 5,
     },
 ]
